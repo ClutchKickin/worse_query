@@ -37,5 +37,3 @@ jobs:
         with:
           name: worse_query-unsigned
           path: worse_query.ipa   
-          name: worse_query-unsigned
-          path: worse_query.ipa   
