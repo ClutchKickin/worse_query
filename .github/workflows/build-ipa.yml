@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: List Schemes
+        run: xcodebuild -list -project worse_query.xcodeproj
+
       - name: Build (unsigned)
         run: |
           xcodebuild \
