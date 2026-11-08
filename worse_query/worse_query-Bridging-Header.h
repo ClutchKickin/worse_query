@@ -3,5 +3,4 @@
 //
 
 #include "worse_query.h"
-#include "eventleak.h"
 #include "pathleak.h"
