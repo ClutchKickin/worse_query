@@ -6,14 +6,11 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: xcode-27
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: List Schemes
-        run: xcodebuild -list -project worse_query.xcodeproj
 
       - name: Build (unsigned)
         run: |
@@ -38,5 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
+          name: worse_query-unsigned
+          path: worse_query.ipa   
           name: worse_query-unsigned
           path: worse_query.ipa   
